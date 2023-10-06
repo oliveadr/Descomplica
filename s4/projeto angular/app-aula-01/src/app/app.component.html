@@ -1,0 +1,21 @@
+<h1>Aplicação</h1>
+<app-header></app-header>
+<router-outlet></router-outlet>
+
+
+<div *ngIf = "clientePremium; else naopremium">
+    tem acesso a informações diferentes
+</div>
+<ng-template #naopremium>
+    não tem acesso
+</ng-template>
+<ul>
+    <li>coiso 1 - {{descricao}}</li>
+</ul>
+<label >descricao</label>
+<br />
+<input [(ngModel)]="valor.descricao"/>
+<br />
+<label>nome</label>
+<br/>
+<input [(ngModel)] ="valor.nome"/>

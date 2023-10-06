@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-04</title>
+</head>
+<body>
+    <h3>Pensar e responder 04</h3>
+    <script>
+        let matriz = new Array (4);
+        for (let linha = 0; linha<4; linha++){
+            matriz[linha] = new Array(5);
+            for(let coluna = 0; coluna<5; coluna++){
+                matriz [linha][coluna] = (linha + 2)*(coluna +1);
+            }
+        }
+        console.table(matriz)
+    </script>
+    
+</body>
+</html>
